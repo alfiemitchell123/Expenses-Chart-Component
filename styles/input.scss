@@ -1,0 +1,113 @@
+// Primary colours
+$soft-red: hsl(10, 79%, 65%);
+$cyan: hsl(186, 34%, 60%);
+
+// Neutral colours
+$dark-brown: hsl(25, 47%, 15%);
+$med-brown: hsl(28, 10%, 53%);
+$cream: hsl(27, 66%, 92%);
+$pale-orange: hsl(33, 100%, 98%);
+
+// Font family
+$font-stack: "DM Sans", sans-serif;
+
+@font-face {
+    font-family: $font-stack;
+    src: url(/fonts/DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: $font-stack;
+    font-size: 18px;
+}
+
+body {
+    background-color: $cream;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.white-container {
+    display: grid;
+    align-items: center;
+    background: $pale-orange;
+    padding: 30px;
+    border-radius: 10px;
+
+    h1 {
+        font-size: 25px;
+        color: $dark-brown;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        height: 230px;
+    }
+
+    .day {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .total {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: end;
+        padding: 20px 0;
+
+        #total-month {
+            color: $med-brown;
+        }
+
+        #total-for-month {
+            grid-column: 1;
+            grid-row: 2;
+            font-weight: bold;
+            color: $dark-brown;
+            font-size: 34px;
+        }
+
+        #last-month,
+        #percentage {
+            text-align: right;
+        }
+
+        #last-month {
+            color: $med-brown;
+        }
+    }
+
+    .bar {
+        width: 45px;
+        height: 200px;
+        background-color: $soft-red;
+        border-radius: 10px;
+    }
+
+    .bar:hover {
+        background-color: $cyan;
+        cursor: pointer;
+    }
+
+    .p-amount {
+        opacity: 0;
+        background: black;
+        color: white;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 0.4em;
+        border-radius: 5px;
+    }
+}

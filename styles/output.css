@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "DM Sans", sans-serif;
+  src: url(/fonts/DMSans-VariableFont_opsz\,wght.ttf);
+}
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+}
+
+body {
+  background-color: hsl(27, 66%, 92%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.white-container {
+  display: grid;
+  align-items: center;
+  background: hsl(33, 100%, 98%);
+  padding: 30px;
+  border-radius: 10px;
+}
+.white-container h1 {
+  font-size: 25px;
+  color: hsl(25, 47%, 15%);
+}
+.white-container ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  height: 230px;
+}
+.white-container .day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+.white-container .total {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+  padding: 20px 0;
+}
+.white-container .total #total-month {
+  color: hsl(28, 10%, 53%);
+}
+.white-container .total #total-for-month {
+  grid-column: 1;
+  grid-row: 2;
+  font-weight: bold;
+  color: hsl(25, 47%, 15%);
+  font-size: 34px;
+}
+.white-container .total #last-month,
+.white-container .total #percentage {
+  text-align: right;
+}
+.white-container .total #last-month {
+  color: hsl(28, 10%, 53%);
+}
+.white-container .bar {
+  width: 45px;
+  height: 200px;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 10px;
+}
+.white-container .bar:hover {
+  background-color: hsl(186, 34%, 60%);
+  cursor: pointer;
+}
+.white-container .p-amount {
+  opacity: 0;
+  background: black;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0.4em;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=output.css.map */

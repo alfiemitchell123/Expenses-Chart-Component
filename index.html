@@ -10,29 +10,35 @@
 
   <title>Frontend Mentor | Expenses chart component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
+  <link rel="stylesheet" href="/styles/output.css">
 </head>
 
 <body>
 
-  <h1>Expenses</h1>
-  <ul></ul>
+  <main>
+    <div class="container">
+      <div class="balance">
 
-  <table id="graph">
-    <tbody></tbody>
-  </table>
+      </div>
 
-  <p></p>
+      <div class="white-container">
+        <h1>Spending - last 7 days</h1>
+
+        <div class="chart">
+          <ul></ul>
+        </div>
+
+        <div class="total">
+          <span id="total-month">Total this month</span>
+          <p id="total-for-month">$478.33</p>
+          <span id="percentage"><b>+2.4%</b></span>
+          <span id="last-month">from last month</span>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
 
   <script src="script.js"></script>
 </body>
