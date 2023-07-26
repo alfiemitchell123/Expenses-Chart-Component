@@ -51,8 +51,6 @@ Users should be able to:
 
 I learned a lot in this project. One of the main things I took from it, was the ability to extract data from a JSON file and display it accordingly on the page. I used asyncronous functions to process the data and template literals to render it dynamically on the page. This is a powerful feature in JavaScript and I look forward to using it in bigger projects.
 
-To see how you can add code snippets, see below:
-
 ```js
 const res = await fetch('data.json');
 const data = await res.json();
