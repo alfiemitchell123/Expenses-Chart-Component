@@ -104,6 +104,12 @@ main {
         justify-content: end;
     }
 
+    .li-day {
+        color: $med-brown;
+        font-size: 15px;
+        padding-top: 7px;
+    }
+
     .total {
         display: grid;
         grid-template-columns: 1fr 1fr;

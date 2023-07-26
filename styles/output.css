@@ -80,6 +80,11 @@ main {
   align-items: center;
   justify-content: end;
 }
+.white-container .li-day {
+  color: hsl(28, 10%, 53%);
+  font-size: 15px;
+  padding-top: 7px;
+}
 .white-container .total {
   display: grid;
   grid-template-columns: 1fr 1fr;
