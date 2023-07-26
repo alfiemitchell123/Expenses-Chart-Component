@@ -21,6 +21,42 @@ main {
   height: 100vh;
 }
 
+.container {
+  display: grid;
+  gap: 20px;
+}
+
+.balance {
+  display: grid;
+  grid-template-columns: auto auto;
+  background: hsl(10, 79%, 65%);
+  padding: 1.5em;
+  border-radius: 10px;
+  align-items: center;
+}
+.balance #balance-title,
+.balance #balance-amt {
+  color: hsl(33, 100%, 98%);
+}
+.balance #balance-title {
+  font-size: 14px;
+}
+.balance #balance-amt {
+  font-weight: bold;
+  font-size: 24px;
+}
+.balance .text-container {
+  grid-column: 1;
+}
+.balance .img-container {
+  grid-column: 2;
+  display: flex;
+  justify-content: flex-end;
+}
+.balance img {
+  max-width: 100%;
+}
+
 .white-container {
   display: grid;
   align-items: center;

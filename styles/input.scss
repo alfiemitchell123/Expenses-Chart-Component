@@ -35,6 +35,49 @@ main {
     height: 100vh;
 }
 
+.container {
+    display: grid;
+    gap: 20px;
+}
+
+.balance {
+    display: grid;
+    grid-template-columns: auto auto;
+    background: $soft-red;
+    padding: 1.5em;
+    border-radius: 10px;
+    align-items: center;
+
+    #balance-title,
+    #balance-amt {
+        color: $pale-orange;
+    }
+
+    #balance-title {
+        font-size: 14px;
+    }
+
+    #balance-amt {
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .text-container {
+        grid-column: 1;
+    }
+
+    .img-container {
+        grid-column: 2;
+        display: flex;
+        justify-content: flex-end;
+        ;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
 .white-container {
     display: grid;
     align-items: center;
