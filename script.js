@@ -14,7 +14,7 @@
 
 // Async/await is a more concise / easy to read method of fetching data from a JSON file / API
 async function fetchData() {
-    const res = await fetch('/data.json');
+    const res = await fetch('data.json');
     const data = await res.json();
 
     if (!Array.isArray(data)) {
